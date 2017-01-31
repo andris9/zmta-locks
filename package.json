@@ -1,0 +1,21 @@
+{
+  "name": "zmta-locks",
+  "version": "1.0.0",
+  "description": "Locking system for ZoneMTA",
+  "main": "lib/zmta-locks.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "keywords": [],
+  "author": "Andris Reinman",
+  "license": "EUPL-1.1",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-eslint": "^19.0.0"
+  },
+  "dependencies": {
+    "redis": "^2.6.5"
+  }
+}
