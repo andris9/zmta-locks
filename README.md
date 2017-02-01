@@ -15,7 +15,7 @@ Where
 ## Create new lock
 
 ```javascript
-locker.acquire(zone, domain, messageId, callback)
+locker.acquire(zone, domain, messageId, maxConnections, callback)
 ```
 
 Where
@@ -23,6 +23,7 @@ Where
   * **zone** is a Zone name
   * **domain** is a domain name
   * **messageId** is a messageId to lock
+  * **maxConnections** is a number that indicates how many locks against zone+domain can be made
   * **callback** *(err, lock)* is a callback function to run with the lock. If lock was already acquired, then `lock` is false
 
 ## Release a lock
